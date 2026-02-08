@@ -1,0 +1,69 @@
+/* src/features/auth/Login.css */
+
+.page-background {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F2F5;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* spacing แต่ละ row */
+  background-color: transparent; /* ไม่มีสี */
+}
+
+.login-logo {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.login-tabs {
+  margin-top: 12px;
+}
+
+/* spacing ระหว่าง row ของ form */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 24px; /* spacing ระหว่าง firstname/family name */
+}
+
+.name-fields > input {
+  flex: 1;
+  border-radius: 2px;
+}
+
+input, .ant-input, .ant-input-password {
+  border-radius: 2px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-text {
+  font-size: 12px;
+  margin-top: 4px;
+}

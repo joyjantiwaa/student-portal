@@ -1,0 +1,45 @@
+/* CourseCard.css */
+
+.floating-heart-container {
+  /* จัดให้อยู่ตรงกลางของ Cover Image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; 
+  pointer-events: none; /* เพื่อไม่ให้ขวางการคลิกอื่น ๆ */
+}
+
+.floating-heart-icon {
+  /* กำหนดสไตล์เริ่มต้นของไอคอน */
+  font-size: 80px; 
+  /* 💡 สีถูกกำหนดใน JSX แล้ว (colors.polarGreen[7]) แต่ถ้าต้องการกำหนดที่นี่ก็ได้ */
+  opacity: 0; 
+  transform: scale(0.5); 
+
+  /* เชื่อมโยงกับ keyframes animation */
+  animation: floating-heart-animate 1s ease-out forwards;
+}
+
+/* กำหนด Keyframes Animation */
+@keyframes floating-heart-animate {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(0);
+  }
+  30% {
+    /* ขยายใหญ่ขึ้นและปรากฏตัวเร็ว */
+    opacity: 0.9;
+    transform: scale(1.1) translateY(0);
+  }
+  70% {
+    /* เริ่มลอยขึ้น */
+    opacity: 0.7;
+    transform: scale(1.0) translateY(-20px);
+  }
+  100% {
+    /* จางหายไปและลอยขึ้นเล็กน้อย */
+    opacity: 0;
+    transform: scale(0.8) translateY(-50px);
+  }
+}
