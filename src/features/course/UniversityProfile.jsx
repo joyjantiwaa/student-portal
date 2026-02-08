@@ -22,7 +22,7 @@ import img7 from "@/assets/images/Rectangle 1656.jpg";
 import img8 from "@/assets/images/Rectangle 1656.jpg";
 import colors from "@/features/designsystem/colors"; 
 import MenuBar from "@/features/components/MenuBar";
-import SideBar from "@/features/components/SideBar";
+import Sidebar from "@/features/components/Sidebar";
 import UpcomingEvents from "@/features/components/UpcomingEvents";
 import AppFooter from "@/features/components/Footer";
 import { useNavigate } from 'react-router-dom';

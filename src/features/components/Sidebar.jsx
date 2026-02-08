@@ -9,7 +9,6 @@ import {
   // ❌ ลบ LogoutOutlined ออก
 } from "@ant-design/icons";
 import { useNavigate, useLocation } from "react-router-dom";
-import { useSearchParams } from "react-router-dom";
 import colors from "@/features/designsystem/colors";
 import logo from "@/assets/images/logo.svg";
 
