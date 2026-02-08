@@ -7,7 +7,7 @@ import {
   BankOutlined,
 } from "@ant-design/icons";
 import colors from "@/features/designsystem/colors";
-import coverImg from "@/assets/images/cover.jpg";
+import coverImg from "@/assets/images/Cover.jpg";
 import uniLogo from "@/assets/images/university-logo.png";
 
 
